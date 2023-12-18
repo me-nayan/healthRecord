@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Authentication</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="newUserStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="btn-group btn-block mb-3">
+            <button type="button" class="btn btn-primary active" id="loginBtn">
+              Login
+            </button>
+            <button type="button" class="btn btn-primary" id="signupBtn">
+              Sign Up
+            </button>
+          </div>
+
+          <!-- Login Form -->
+          <form class="form-signup" id="loginForm">
+            <div class="form-group">
+              <label for="inputEmailLogin">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmailLogin"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPasswordLogin">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPasswordLogin"
+                placeholder="********"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit
+            </button>
+            <div class="tag">or Log In using</div>
+            <hr />
+            <div class="icons">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+            </div>
+          </form>
+
+          <!-- Sign Up Form -->
+          <form class="form-signup" id="signupForm" style="display: none">
+            <div class="form-group">
+              <label for="inputNameSignup">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputNameSignup"
+                placeholder="Enter full name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmailSignup">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmailSignup"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPhoneSignup">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhoneSignup"
+                placeholder="Enter phone number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPasswordSignup">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPasswordSignup"
+                placeholder="********"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // JavaScript to toggle between Login and Sign Up forms
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          document.getElementById("loginForm").style.display = "block";
+          document.getElementById("signupForm").style.display = "none";
+          document.getElementById("loginBtn").classList.add("active");
+          document.getElementById("signupBtn").classList.remove("active");
+        });
+
+      document
+        .getElementById("signupBtn")
+        .addEventListener("click", function () {
+          document.getElementById("signupForm").style.display = "block";
+          document.getElementById("loginForm").style.display = "none";
+          document.getElementById("signupBtn").classList.add("active");
+          document.getElementById("loginBtn").classList.remove("active");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- External CSS -->
+  <link href="helpPageStyles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">HealthRecord</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="helpPage.html">Help</a>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Contact Us</h1>
+      <p class="lead">Get in touch with us. We'd love to hear from you!</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="inputName">Your Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Your Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Our Address</h4>
+        <p>123 Street Name</p>
+        <p>City, State, ZIP</p>
+        <p>Country</p>
+        <h4>Contact Information</h4>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* Adjusting top margin to give space for the navbar */
+body {
+    margin-top: 70px;
+  }
+  
+  /* Style for the blood pressure boxes */
+  .blood-pressure-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .blood-pressure-input input {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: calc(50% - 1px);
+    padding: 0.375rem 0.75rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .blood-pressure-input .slash {
+    padding: 0 5px;
+  }
+  
+  .blood-pressure-input .box-divider {
+    width: 0px;
+    background-color: #ced4da;
+  }
+
+  /* Style for the waist hip ratio boxes */
+  .waisthip-ratio-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .waisthip-ratio-input input {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: calc(50% - 1px);
+    padding: 0.375rem 0.75rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .waisthip-ratio-input .slash {
+    padding: 0 5px;
+  }
+  
+  .waisthip-ratio-input .box-divider {
+    width: 0px;
+    background-color: #ced4da;
+  }
+
+  /* Style for the pft boxes */
+  .pft-input {
+    display: flex;
+  }
+  
+  .pft-input input {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: calc(25% - 10px); /* Adjusted width to include spacing */
+    padding: 0.375rem 0.75rem;
+    margin: 0 5px; /* Added margin between input boxes */
+    text-align: center;
+  }
+  
+  

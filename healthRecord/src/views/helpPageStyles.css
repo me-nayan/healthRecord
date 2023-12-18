@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+  }
+  
+  .jumbotron {
+    background-color: #f8f9fa;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
